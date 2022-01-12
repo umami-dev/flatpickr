@@ -2923,7 +2923,7 @@ function _flatpickr(
   // static list
   const nodes = Array.prototype.slice
     .call(nodeList)
-    .filter((x) => x instanceof HTMLElement) as HTMLElement[];
+    .filter((x) => x instanceof Element) as HTMLElement[];
 
   const instances: Instance[] = [];
   for (let i = 0; i < nodes.length; i++) {
